@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Stocker - Stock Market Website Template</title>
+        <title>TH-Trade - Industrial Consulting & Supply</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -46,13 +46,13 @@
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        <a href="tel:+8802334419952" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+880 2334419952</a>
+                        <a href="mailto:info@th-trade.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>info@th-trade.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#" id="register-link" onclick="registerUser(event)"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i><span id="register-text">Register</span></small></a>
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
                             <div class="dropdown-menu rounded">
@@ -73,8 +73,8 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Stocker</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <img src="img/TH-Trade-Official-Logo_.png" alt="TH-Trade Logo" style="height: 50px;">
+                    <!-- <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>TH-Trade</h1> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -107,7 +107,7 @@
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Blog</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Industry Insights</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
@@ -124,88 +124,110 @@
         <div class="container-fluid blog py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Blog & News</h4>
-                    <h1 class="display-5 mb-4">Articles For Pro Traders</h1>
-                    <p class="mb-0">Here is some tip for trading
+                    <h4 class="text-primary">Industry Insights & News</h4>
+                    <h1 class="display-5 mb-4">Latest Industrial Trends & Tips</h1>
+                    <p class="mb-0">Stay updated with the latest industry insights, safety protocols, equipment maintenance tips, and industrial best practices from our expert team.
                     </p>
                 </div>
                 <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
                     <div class="blog-item p-4">
                         <div class="blog-img mb-4">
+                            <img src="img/service-1.jpg" class="img-fluid w-100 rounded mb-2" alt="Safety Equipment">
                             <div class="blog-title">
-                                <a href="#" class="btn">Plan/a>
+                                <a href="#" class="btn">Safety</a>
                             </div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3">Have a Clear Trading Plan</a>
-                        <p class="mb-4">Define your entry, exit, and risk management rules. Stick to your strategy; dont trade on emotion or impulse. Backtest your strategy before using real money.
+                        <a href="#" class="h4 d-inline-block mb-3">Essential Fire Safety Equipment for Industrial Facilities</a>
+                        <p class="mb-4">Proper fire safety equipment is crucial for industrial facilities. Learn about the essential fire detection systems, extinguishers, and safety protocols that every industrial facility should have in place to protect workers and assets.
                         </p>
                         <div class="d-flex align-items-center">
                             <div class="ms-3">
-                                <h5>Admin</h5>
+                                <h5>Safety Expert</h5>
                                 <p class="mb-0">October 9, 2025</p>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item p-4">
                         <div class="blog-img mb-4">
-                            <img src="img/Im1.jpg" class="img-fluid w-100 rounded mb-2" alt="Indicator">
+                            <img src="img/service-2.jpg" class="img-fluid w-100 rounded mb-2" alt="Tools">
                             <div class="blog-title">
-                                <a href="#" class="btn">Indicator</a>
+                                <a href="#" class="btn">Equipment</a>
                             </div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3">Trend Indicators</a>
-                        <p class="mb-4">Moving Averages (MA), SMA (Simple MA) and EMA (Exponential MA) help smooth out price action.
-                            Used for identifying trend direction and crossover signals (e.g., 50 EMA vs. 200 EMA).
-                            MACD (Moving Average Convergence Divergence)
-                            Shows trend momentum and possible reversals.
-                            Signal line crossovers and histogram help spot entry points.
-                            ADX (Average Directional Index)
-                            Measures the strength (not direction) of a trend.
-                            ADX > 25 often indicates a strong trend.
-                            
+                        <a href="#" class="h4 d-inline-block mb-3">Choosing the Right Industrial Tools for Your Project</a>
+                        <p class="mb-4">Selecting the appropriate industrial tools can significantly impact project efficiency and safety. This guide covers power tools, hand tools, and specialized equipment selection based on project requirements, safety standards, and budget considerations.
                         </p>
                         <div class="d-flex align-items-center">
                             <div class="ms-3">
-                                <h5>Admin</h5>
+                                <h5>Equipment Specialist</h5>
                                 <p class="mb-0">October 9, 2025</p>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item p-4">
                         <div class="blog-img mb-4">
-                            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="Heavy Vehicles">
                             <div class="blog-title">
-                                <a href="#" class="btn">Mentality</a>
+                                <a href="#" class="btn">Fleet Management</a>
                             </div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3">Don't Chase Trends Late</a>
-                        <p class="mb-4">
-                            Enter early in a move or wait for a pullback.
-                            Buying near the peak or selling at the bottom is a recipe for losses.
+                        <a href="#" class="h4 d-inline-block mb-3">Heavy Vehicle Fleet Maintenance Best Practices</a>
+                        <p class="mb-4">Proper maintenance of heavy vehicles is essential for safety and operational efficiency. Learn about preventive maintenance schedules, inspection protocols, and cost-effective fleet management strategies that extend equipment lifespan and reduce downtime.
+                        </p>
                         <div class="d-flex align-items-center">
                             <div class="ms-3">
-                                <h5>Admin</h5>
+                                <h5>Fleet Manager</h5>
                                 <p class="mb-0">October 9, 2025</p>
                             </div>
                         </div>
                     </div>
                     <div class="blog-item p-4">
                         <div class="blog-img mb-4">
+                            <img src="img/service-4.jpg" class="img-fluid w-100 rounded mb-2" alt="Construction Materials">
                             <div class="blog-title">
-                                <a href="#" class="btn">Indicator</a>
+                                <a href="#" class="btn">Materials</a>
                             </div>
                         </div>
-                        <a href="#" class="h4 d-inline-block mb-3">Custom / Advanced Indicators</a>
-                        <p class="mb-4">Ichimoku Cloud
-                            All-in-one indicator showing support/resistance, trend, and momentum.
-                            Great for longer-term trend-following strategies.
-                            Fibonacci Retracement
-                            Identifies possible support and resistance zones.
-                            Popular levels: 38.2%, 50%, 61.8%.
+                        <a href="#" class="h4 d-inline-block mb-3">Quality Construction Materials: What to Look For</a>
+                        <p class="mb-4">The quality of construction materials directly affects project durability and safety. Discover how to identify high-quality steel, concrete, lumber, and electrical supplies, along with supplier verification methods and material testing protocols.
+                        </p>
                         <div class="d-flex align-items-center">
-
                             <div class="ms-3">
-                                <h5>Admin</h5>
+                                <h5>Materials Expert</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-5.jpg" class="img-fluid w-100 rounded mb-2" alt="Chemicals">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Chemicals</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Industrial Chemicals and Lubricants: Safety and Selection</a>
+                        <p class="mb-4">Proper selection and handling of industrial chemicals and lubricants is critical for workplace safety and equipment performance. Learn about chemical compatibility, safety data sheets, proper storage methods, and environmental compliance requirements.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h5>Chemical Safety Officer</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-6.jpg" class="img-fluid w-100 rounded mb-2" alt="Consulting">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Consulting</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Industrial Consulting: Optimizing Your Operations</a>
+                        <p class="mb-4">Professional industrial consulting can transform your operations through equipment optimization, safety protocol development, and supply chain improvements. Discover how expert consulting services can enhance efficiency, reduce costs, and improve workplace safety standards.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <h5>Industrial Consultant</h5>
                                 <p class="mb-0">October 9, 2025</p>
                             </div>
                         </div>
@@ -222,23 +244,24 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="index.html" class="p-0">
-                                <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Stocker</h4>
+                                <h4 class="text-white"><i class="fas fa-industry me-3"></i>TH-Trade</h4>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>
-                            <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                            <p class="mb-4">Your trusted partner for comprehensive industrial consulting and supply solutions. From hardware and tools to fire safety systems, heavy vehicles, construction materials, chemicals, and lubricants - we provide everything your business needs to succeed.
+                            </p>
                             <div class="d-flex">
                                 <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
-                                    <i class="fas fa-apple-alt text-white"></i>
+                                    <i class="fas fa-industry text-white"></i>
                                     <div class="ms-3">
-                                        <small class="text-white">Download on the</small>
-                                        <h6 class="text-white">App Store</h6>
+                                        <small class="text-white">Industrial</small>
+                                        <h6 class="text-white">Solutions</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
-                                    <i class="fas fa-play text-primary"></i>
+                                    <i class="fas fa-tools text-primary"></i>
                                     <div class="ms-3">
-                                        <small class="text-white">Get it on</small>
-                                        <h6 class="text-white">Google Play</h6>
+                                        <small class="text-white">Equipment</small>
+                                        <h6 class="text-white">Supply</h6>
                                     </div>
                                 </a>
                             </div>
@@ -248,9 +271,9 @@
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Quick Links</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Equipment</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Safety</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
                         </div>
@@ -260,8 +283,8 @@
                             <h4 class="text-white mb-4">Support</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Safety Guidelines</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Technical Support</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
                         </div>
@@ -271,19 +294,19 @@
                             <h4 class="text-white mb-4">Contact Info</h4>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">123 Street New York.USA</p>
+                                <p class="text-white mb-0">1404/ B. D.T.Road, Dhanialapara, Chattogram 4000</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
-                                <p class="text-white mb-0">info@example.com</p>
+                                <p class="text-white mb-0">info@th-trade.com</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                                <p class="text-white mb-0">+880 2334419952</p>
                             </div>
                             <div class="d-flex align-items-center mb-4">
                                 <i class="fab fa-firefox-browser text-primary me-3"></i>
-                                <p class="text-white mb-0">Yoursite@ex.com</p>
+                                <p class="text-white mb-0">www.th-trade.com</p>
                             </div>
                             <div class="d-flex">
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>

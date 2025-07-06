@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Stocker - Stock Market Website Template</title>
+        <title>TH-Trade - Industrial Consulting & Supply</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -46,14 +46,13 @@
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                        <a href="tel:+8802334419952" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+880 2334419952</a>
+                        <a href="mailto:info@th-trade.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>info@th-trade.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
-                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <a href="#" id="register-link" onclick="registerUser(event)"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i><span id="register-text">Register</span></small></a>
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
                             <div class="dropdown-menu rounded">
@@ -74,8 +73,8 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Stocker</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <img src="img/TH-Trade-Official-Logo_.png" alt="TH-Trade Logo" style="height: 50px;">
+                    <!-- <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>TH-Trade</h1> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -108,7 +107,7 @@
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Offer</h4>
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Special Offers</h4>
                     <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
@@ -125,25 +124,25 @@
         <div class="container-fluid offer-section py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Offer</h4>
-                    <h1 class="display-5 mb-4">Benefits We offer</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    <h4 class="text-primary">Our Special Offers</h4>
+                    <h1 class="display-5 mb-4">Exclusive Benefits for Industrial Clients</h1>
+                    <p class="mb-0">We provide comprehensive industrial solutions with exclusive benefits designed to enhance your operations, reduce costs, and improve safety standards. Our tailored offers ensure maximum value for your business investment.
                     </p>
                 </div>
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="nav nav-pills bg-light rounded p-5">
                             <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
-                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                                <h5 class="mb-0">Comprehensive Equipment Supply with Quality Assurance</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
-                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                                <h5 class="mb-0">Expert Safety Consulting and Training Programs</h5>
                             </a>
                             <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
-                                <h5 class="mb-0">Mobile payment is more flexible and easy for all investors</h5>
+                                <h5 class="mb-0">Flexible Payment Plans and Bulk Purchase Discounts</h5>
                             </a>
                             <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
-                                <h5 class="mb-0">all transaction is kept free for the member of pro traders</h5>
+                                <h5 class="mb-0">24/7 Technical Support and Emergency Services</h5>
                             </a>
                         </div>
                     </div>
@@ -155,8 +154,8 @@
                                         <img src="img/offer-1.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-md-5">
-                                        <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
-                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        <h1 class="display-5 mb-4">Premium Equipment Supply</h1>
+                                        <p class="mb-4">Access to the highest quality industrial hardware, tools, and specialized equipment with comprehensive warranty coverage and quality assurance guarantees. Our equipment selection is backed by expert consultation to ensure optimal performance for your specific applications.
                                         </p>
                                         <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                                     </div>
@@ -168,8 +167,8 @@
                                         <img src="img/offer-2.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-md-5">
-                                        <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
-                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        <h1 class="display-5 mb-4">Safety Excellence Programs</h1>
+                                        <p class="mb-4">Comprehensive fire safety systems installation with professional training programs for your team. Our safety experts provide ongoing support to ensure compliance with industry standards and maintain the highest safety protocols in your facility.
                                         </p>
                                         <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                                     </div>
@@ -181,8 +180,8 @@
                                         <img src="img/offer-3.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-md-5">
-                                        <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
-                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        <h1 class="display-5 mb-4">Flexible Payment Solutions</h1>
+                                        <p class="mb-4">Customized payment plans designed for industrial businesses with bulk purchase discounts and volume pricing. We offer flexible financing options to help you manage your equipment investments while maintaining operational efficiency.
                                         </p>
                                         <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                                     </div>
@@ -194,8 +193,8 @@
                                         <img src="img/offer-4.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
                                     <div class="col-md-5">
-                                        <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
-                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        <h1 class="display-5 mb-4">24/7 Support Services</h1>
+                                        <p class="mb-4">Round-the-clock technical support and emergency services to ensure your operations never stop. Our dedicated team is always available to provide immediate assistance, maintenance support, and emergency equipment replacement when you need it most.
                                         </p>
                                         <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                                     </div>
@@ -215,23 +214,24 @@
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="index.html" class="p-0">
-                                <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>Stocker</h4>
+                                <h4 class="text-white"><i class="fas fa-industry me-3"></i>TH-Trade</h4>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>
-                            <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                            <p class="mb-4">Your trusted partner for comprehensive industrial consulting and supply solutions. From hardware and tools to fire safety systems, heavy vehicles, construction materials, chemicals, and lubricants - we provide everything your business needs to succeed.
+                            </p>
                             <div class="d-flex">
                                 <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
-                                    <i class="fas fa-apple-alt text-white"></i>
+                                    <i class="fas fa-industry text-white"></i>
                                     <div class="ms-3">
-                                        <small class="text-white">Download on the</small>
-                                        <h6 class="text-white">App Store</h6>
+                                        <small class="text-white">Industrial</small>
+                                        <h6 class="text-white">Solutions</h6>
                                     </div>
                                 </a>
                                 <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
-                                    <i class="fas fa-play text-primary"></i>
+                                    <i class="fas fa-tools text-primary"></i>
                                     <div class="ms-3">
-                                        <small class="text-white">Get it on</small>
-                                        <h6 class="text-white">Google Play</h6>
+                                        <small class="text-white">Equipment</small>
+                                        <h6 class="text-white">Supply</h6>
                                     </div>
                                 </a>
                             </div>
@@ -241,9 +241,9 @@
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Quick Links</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Equipment</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Safety</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
                         </div>
@@ -253,8 +253,8 @@
                             <h4 class="text-white mb-4">Support</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Safety Guidelines</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Technical Support</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
                         </div>
@@ -264,19 +264,19 @@
                             <h4 class="text-white mb-4">Contact Info</h4>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">123 Street New York.USA</p>
+                                <p class="text-white mb-0">1404/ B. D.T.Road, Dhanialapara, Chattogram 4000</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-envelope text-primary me-3"></i>
-                                <p class="text-white mb-0">info@example.com</p>
+                                <p class="text-white mb-0">info@th-trade.com</p>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
-                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                                <p class="text-white mb-0">+880 2334419952</p>
                             </div>
                             <div class="d-flex align-items-center mb-4">
                                 <i class="fab fa-firefox-browser text-primary me-3"></i>
-                                <p class="text-white mb-0">Yoursite@ex.com</p>
+                                <p class="text-white mb-0">www.th-trade.com</p>
                             </div>
                             <div class="d-flex">
                                 <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
@@ -327,6 +327,48 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+          function greetUser() {
+            var userName = prompt('What is your name?');
+            if (userName && userName.trim() !== '') {
+              alert('Hello ' + userName + ', wish you have a wonderful day!');
+            } else {
+              alert('Hello, wish you have a wonderful day!');
+            }
+          }
+
+          function setRegisterName(name) {
+            var registerText = document.getElementById('register-text');
+            if (registerText) {
+              registerText.textContent = name;
+            }
+            var registerLink = document.getElementById('register-link');
+            if (registerLink) {
+              registerLink.dataset.registered = 'true';
+            }
+          }
+
+          function registerUser(event) {
+            event.preventDefault();
+            var registerLink = document.getElementById('register-link');
+            if (registerLink.dataset.registered === 'true') {
+              return false;
+            }
+            var userName = prompt('Please enter your name to register:');
+            if (userName && userName.trim() !== '') {
+              localStorage.setItem('registeredUserName', userName);
+              setRegisterName(userName);
+            }
+            return false;
+          }
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var savedName = localStorage.getItem('registeredUserName');
+            if (savedName) {
+              setRegisterName(savedName);
+            }
+          });
+        </script>
     </body>
 
 </html>
